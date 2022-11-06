@@ -56,7 +56,7 @@ header {
 #cards {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
 
 .card {
@@ -106,7 +106,7 @@ header {
 }
 
 .card ul li + li {
-  padding-top: 24px;
+  padding-top: 05px;
   border-top: 1px solid #323238;
 }
 
@@ -146,9 +146,9 @@ header {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
   #cards {
-    max-width: 670px;
+    max-width: 1050px;
     flex-direction: row;
     flex-wrap: wrap;
   }
