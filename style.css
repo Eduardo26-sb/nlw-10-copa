@@ -18,8 +18,8 @@ body.blue {
   --bg: url(./assets/bg-blue.svg);
 }
 body.green {
-  --card-title-border-color: #08f12b;
-  --card-color-primary: #08f12b;
+  --card-title-border-color: #057616;
+  --card-color-primary: #057616;
   --card-bg-color: #1a1f1b;
   --bg: url(./assets/bg-green.svg);
 }
@@ -29,13 +29,13 @@ ul {
 }
 
 body {
-  /*background-color: #121214;
+  background-color: #121214;
   background-image: var(--bg);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 
-  background: #121214 var(--bg) no-repeat top center/cover;
+  /* background: #121214 var(--bg) no-repeat top center/cover;*/
 }
 
 body * {
@@ -45,18 +45,18 @@ body * {
 #app {
   width: fit-content;
   margin: auto;
-  padding-top: 52px;
+  padding-top: 20px;
 }
 
 header {
-  margin-bottom: 63px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 #cards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 
 .card {
@@ -64,8 +64,8 @@ header {
   text-align: center;
 
   background: var(--card-bg-color);
-  border-bottom: 2px solid var(--card-color-primary);
-  border-radius: 6px;
+  border-bottom: 1px solid var(--card-color-primary);
+  border-radius: 50px;
 }
 
 .card h2 {
@@ -106,7 +106,7 @@ header {
 }
 
 .card ul li + li {
-  padding-top: 05px;
+  padding-top: 24px;
   border-top: 1px solid #323238;
 }
 
@@ -131,8 +131,8 @@ header {
 }
 
 .card {
-  opacity: 1;
-  animation: appear 2s forwards;
+  opacity: 0;
+  animation: appear 0.2s forwards;
 }
 
 @keyframes appear {
@@ -146,7 +146,7 @@ header {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   #cards {
     max-width: 1050px;
     flex-direction: row;
